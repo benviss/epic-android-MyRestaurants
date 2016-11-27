@@ -4,11 +4,9 @@ package com.dafunk.myrestaurants;
  * Created by foste on 11/12/2016.
  */
 
-import android.app.Activity;
 import android.support.test.rule.ActivityTestRule;
-import android.view.View;
-import android.view.inputmethod.InputMethodManager;
-import android.widget.EditText;
+
+import com.dafunk.myrestaurants.ui.MainActivity;
 
 import org.junit.Rule;
 import org.junit.Test;

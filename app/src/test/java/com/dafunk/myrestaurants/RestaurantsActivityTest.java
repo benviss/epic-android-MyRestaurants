@@ -3,17 +3,14 @@ package com.dafunk.myrestaurants;
 import android.os.Build;
 import android.widget.ListView;
 
+import com.dafunk.myrestaurants.ui.RestaurantsActivity;
+
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricGradleTestRunner;
 import org.robolectric.annotation.Config;
-
-import java.util.List;
-
-import dalvik.annotation.TestTargetClass;
 
 import static junit.framework.Assert.assertEquals;
 import static junit.framework.Assert.assertNotNull;
