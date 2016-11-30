@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context="com.dafunk.myrestaurants.ui.RestaurantsActivity">
+    tools:context=".ui.RestaurantListActivity">
 
     <TextView
         android:layout_width="wrap_content"
