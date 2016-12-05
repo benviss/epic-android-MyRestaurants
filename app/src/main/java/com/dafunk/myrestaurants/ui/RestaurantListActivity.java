@@ -1,11 +1,15 @@
 package com.dafunk.myrestaurants.ui;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
+import com.dafunk.myrestaurants.Constants;
 import com.dafunk.myrestaurants.R;
 import com.dafunk.myrestaurants.adapters.RestaurantListAdapter;
 import com.dafunk.myrestaurants.models.Restaurant;
@@ -20,12 +24,14 @@ import okhttp3.Call;
 import okhttp3.Callback;
 import okhttp3.Response;
 
-public class RestaurantListActivity extends AppCompatActivity {
-    public static final String TAG = RestaurantListActivity.class.getSimpleName();
+import static android.R.attr.data;
 
+public class RestaurantListActivity extends AppCompatActivity {
+//    private SharedPreferences mSharedPreferences;
+//    private String mRecentAddress;
+    public static final String TAG = RestaurantListActivity.class.getSimpleName();
     @Bind(R.id.recyclerView) RecyclerView mRecyclerView;
     private RestaurantListAdapter mAdapter;
-
     public ArrayList<Restaurant> mRestaurants = new ArrayList<>();
 
     @Override
@@ -36,8 +42,13 @@ public class RestaurantListActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         String location = intent.getStringExtra("location");
-
         getRestaurants(location);
+
+        //        mSharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        mRecentAddress = mSharedPreferences.getString(Constants.PREFERENCES_LOCATION_KEY, null);
+//        if (mRecentAddress != null) {
+//            getRestaurants(mRecentAddress);
+//        }
     }
 
     private void getRestaurants(String location) {

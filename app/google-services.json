@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "503388525390",
+    "firebase_url": "https://myrestaurants-9345b.firebaseio.com",
+    "project_id": "myrestaurants-9345b",
+    "storage_bucket": "myrestaurants-9345b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503388525390:android:3871ee5faaf9de7a",
+        "android_client_info": {
+          "package_name": "com.dafunk.myrestaurants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503388525390-9robg8uiqd74d029knrl2bnj4p6rtk5e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dafunk.myrestaurants",
+            "certificate_hash": "4B0B2DFC29D345326E22B84BFD08156BB10DDA97"
+          }
+        },
+        {
+          "client_id": "503388525390-n3br6ph6g8te46aam5ssa92lr6807nvr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZFlGvAMreMVF-GpiLN5DeI4Q1Doxvk_E"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503388525390-n3br6ph6g8te46aam5ssa92lr6807nvr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
