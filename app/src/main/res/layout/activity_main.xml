@@ -14,17 +14,6 @@
         android:src="@drawable/background"
         android:scaleType="centerCrop" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/locationEditText"
-        android:background="@color/colorTextIcons"
-        android:padding="5dp"
-        android:hint="Enter Zip Code"
-        android:layout_above="@+id/findRestaurantsButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="36dp" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
