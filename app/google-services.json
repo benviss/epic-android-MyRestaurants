@@ -1,35 +1,27 @@
 {
   "project_info": {
-    "project_number": "503388525390",
-    "firebase_url": "https://myrestaurants-9345b.firebaseio.com",
-    "project_id": "myrestaurants-9345b",
-    "storage_bucket": "myrestaurants-9345b.appspot.com"
+    "project_number": "789527416614",
+    "firebase_url": "https://myrestaurant-81c74.firebaseio.com",
+    "project_id": "myrestaurant-81c74",
+    "storage_bucket": "myrestaurant-81c74.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:503388525390:android:3871ee5faaf9de7a",
+        "mobilesdk_app_id": "1:789527416614:android:3871ee5faaf9de7a",
         "android_client_info": {
           "package_name": "com.dafunk.myrestaurants"
         }
       },
       "oauth_client": [
         {
-          "client_id": "503388525390-9robg8uiqd74d029knrl2bnj4p6rtk5e.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.dafunk.myrestaurants",
-            "certificate_hash": "4B0B2DFC29D345326E22B84BFD08156BB10DDA97"
-          }
-        },
-        {
-          "client_id": "503388525390-n3br6ph6g8te46aam5ssa92lr6807nvr.apps.googleusercontent.com",
+          "client_id": "789527416614-2feba07i3cek2klk1mc0i4h7oletsm7a.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCZFlGvAMreMVF-GpiLN5DeI4Q1Doxvk_E"
+          "current_key": "AIzaSyA37bkmPlSwIpMILAV1h5pXg_zNbq_wblA"
         }
       ],
       "services": {
@@ -37,13 +29,39 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 2,
-          "other_platform_oauth_client": [
-            {
-              "client_id": "503388525390-n3br6ph6g8te46aam5ssa92lr6807nvr.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789527416614:android:c35b6198b483fe96",
+        "android_client_info": {
+          "package_name": "com.qaboard.vizo.qaboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789527416614-2feba07i3cek2klk1mc0i4h7oletsm7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA37bkmPlSwIpMILAV1h5pXg_zNbq_wblA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
         },
         "ads_service": {
           "status": 2

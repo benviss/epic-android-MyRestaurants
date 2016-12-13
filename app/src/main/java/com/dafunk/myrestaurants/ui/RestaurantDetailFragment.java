@@ -16,7 +16,8 @@ import android.widget.Toast;
 import com.dafunk.myrestaurants.Constants;
 import com.dafunk.myrestaurants.R;
 import com.dafunk.myrestaurants.models.Restaurant;
-import com.google.firebase.analytics.FirebaseAnalytics;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
@@ -100,10 +101,19 @@ public class RestaurantDetailFragment extends Fragment implements View.OnClickLi
             startActivity(mapIntent);
         }
         if(v == mSaveRestaurantButton){
+            FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+            String uid = user.getUid();
+
             DatabaseReference restaurantRef = FirebaseDatabase
                     .getInstance()
-                    .getReference(Constants.FIREBASE_CHILD_RESTAURANTS);
-            restaurantRef.push().setValue(mRestaurant);
+                    .getReference(Constants.FIREBASE_CHILD_RESTAURANTS)
+                    .child(uid);
+
+            DatabaseReference pushRef = restaurantRef.push();
+            String pushId = pushRef.getKey();
+            mRestaurant.setPushId(pushId);
+            pushRef.setValue(mRestaurant);
+
             Toast.makeText(getContext(), "Saved", Toast.LENGTH_SHORT).show();
         }
     }
